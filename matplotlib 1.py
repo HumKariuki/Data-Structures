@@ -18,6 +18,15 @@ plt.ylabel("Median Salary")
 plt.legend()
 plt.show()
 
+plt.plot(ages_x,py_dev_y,label="Python")
+plt.title("median Salary (usd)by age")
+plt.xlabel("ages")
+plt.ylabel("Median Salary")
+### method 2 plt.legend(["All Devs","python"])
+## using legend tou have to know the order
+plt.legend()
+plt.show()
+
 ### adding colors
 from matplotlib import pyplot as plt
 print (6*6)
@@ -58,6 +67,16 @@ plt.xlabel("ages")
 plt.ylabel("Median Salary")
 ### method 2 plt.legend(["All Devs","python"])
 ## using legend tou have to know the order
+plt.legend()
+plt.show()
+
+students=(40,55,100,80,25)
+plt.pie(students)
+grade=("A","B","C","D","E")
+exp = (0,0,0.2,0,0)
+plt.pie(students,labels=grade,explode=exp,autopct="%2.1f%%")
+plt.show()
+
 plt.legend()
 plt.show()
 
